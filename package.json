@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "discord.js": "^14.5.0",
+    "googleapis": "^105.0.0"
+  },
+  "name": "drama-card-bot",
+  "version": "1.0.0",
+  "description": "Code for the drama cards system",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "drama-card-bot"
+  },
+  "keywords": [
+    "Syndicate"
+  ],
+  "author": "Erik",
+  "license": "ISC"
+}
