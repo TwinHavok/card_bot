@@ -75,15 +75,22 @@ const getCards = async (user, guild) => {
     .setDescription("You draw three cards from the " + guild + " fate deck.")
     .setTimestamp()
     .setFooter({
-      text: "--------------------\nChoose one of the three cards. Roleplay it out from the moment you learn about the situation. Post a summary of your adventure in the #chronicles channel to gain one candy. Feel free to involve your fellow players! See this document for more details and rules: (insert url)",
+      text: "Bot the product of The Syndicate Guilds, Inc.",
     });
   for (let i = 0; i < cards.length; i++) {
     //console.log(cards[i]);
     embedMessage.addFields({
-      name: cards[i][2] + " (" + cards[i][1] + ")",
+      name: "Card " + (i + 1) + ": " + cards[i][2] + " (" + cards[i][1] + ")",
       value: cards[i][3],
     });
   }
+
+  embedMessage.addFields({
+    name: "Instructions",
+    value:
+      "Choose one of the three cards. Roleplay it out from the moment you learn about the situation. Post a summary of your adventure in the #chronicles channel to gain one candy. Feel free to involve your fellow players! See this document for more details and rules: [Deck of Fate Document](https://docs.google.com/document/d/1MdLyW1qoXMH12WfdHUAj6OX0hjgTfy3PoYgcoX3k1ow/edit?usp=sharing)",
+  });
+
   return embedMessage;
 };
 
