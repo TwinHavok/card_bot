@@ -78,7 +78,7 @@ const getCards = async (user, guild) => {
       text: "--------------------\nChoose one of the three cards. Roleplay it out from the moment you learn about the situation. Post a summary of your adventure in the #chronicles channel to gain one candy. Feel free to involve your fellow players! See this document for more details and rules: (insert url)",
     });
   for (let i = 0; i < cards.length; i++) {
-    console.log(cards[i]);
+    //console.log(cards[i]);
     embedMessage.addFields({
       name: cards[i][2] + " (" + cards[i][1] + ")",
       value: cards[i][3],
